@@ -1,81 +1,240 @@
 /* CSS DEMO PROJECT */
+/* color scheme: #FF5CFA #C950DE #C764F5 #984BE1 #955CFF
+/*  ---------------Box Sizing-----------------  */
 
 html {
-    box-sizing: border-box;
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
+/*  --------------- Responsive Images -----------------  */
 
+img{
+  max-width:100%;
+}
 
+/*  --------------- Utility Styles -----------------  */
 
-body {
-
-    background-color: lightgray;
-    font-family: 'Roboto', sans-serif;
-    margin:0; 
+.container{
+  width:80vw;
+  margin:40px auto;
 }
 
 
 
+/*  --------------- Global Styles -----------------  */
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    
+}
+
 header.primary{
-    background-color:#8D39EB;
-    color:#ffffff;
-    text-align:center; 
-    padding: 40px;
-    /*long form*/
-    padding-top: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
-    padding-left: 40px;  
-    /* T,R,B,L */
-    padding: 20px 40px 20px 40px; 
-    /* Two Value Top/Bottom / L/R */
-    padding: 20px 40px;
-    text-shadow: 1px 1px #000000; 
-   }
+ background-color:#955CFF;
+ color:#ffffff;
+ text-align:center;
+ padding:40px;
+  /*long form*/
+  padding-top: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;  
+   /* T,R,B,L */
+  padding: 20px 40px 20px 40px; 
+  /* Two Value Top/Bottom / L/R */
+  padding: 20px 40px;
+  text-shadow: 1px 1px #000000;
+}
 
-   header.primary h1 {
+header.primary h1 {
+  font-size: 2.4rem;
+  margin: 20px;
+}
 
-        font-size: 45px; 
-        margin: 20px; 
-   }
+header.primary h1 a{
+  color:#fff;
+  text-decoration:none;
+}
 
-   header.primary h1 a{
-    color:#ffffff;
-    text-decoration:none;
-   }
+header.primary h2{
+  font-size:1.4rem;
+ 
+}
 
-   header.primary h2{
-    font-size:1.4rem;  
-   }
+header.primary nav{
+  max-width:960px;
+  margin: 40px auto 20px auto;
+}
 
-   header.primary nav{
-    background:red;
-    max-width:960px; 
-    margin: 20px auto; 
-   }
+header.primary nav ul{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+  padding:0;
+}
 
-   header.primary nav ul{
-    display:flex; 
-    flex-direction:row-reverse;
-    justify-content:space-evenly; 
-    padding:0;
-   }
+header.primary nav ul li{
+  list-style-type:none;
+}
 
-   header.primary nav ul li{
-    list-style-type:none;
-   }
-   
-   header.primary nav a{
-    color:#ffffff;
-    text-decoration:none;
-    background-color:#000000;
-    background-color:rgba(0,0,0, .4)
-    padding: 8px 16px;
-    border-radius:8px; 
-   }
+header.primary nav a{
+  color:#ffffff;
+  text-decoration:none;
+  background-color:#000000;
+  background-color: rgba(0,0,0,.4);
+  padding:8px 16px;
+  border-radius:20px;
+  transition:.5s;
+  border: 1px solid #000;
+}
 
+header.primary nav a:hover,
+header.primary nav a:active
+{
+  background-color: rgba(0,0,0,.8);
+}
+
+#intro{
+  border-bottom: 1px dotted #c0c0c0;
+  padding-bottom:14px;
+}
+
+#intro h2{
+  color:#C764F5;
+  border-bottom: 1px dotted #c0c0c0;
+}
+
+#content{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  gap:20px;
+}
+
+#content article.post{
+  box-shadow: 0 4px 8px rgba(0,0,0,.4);
+  padding:10px;
+  font: size 0.8em;
+  transition: .5;
+}
+
+#content article.post:hover{
+  box-shadow: 0 4px 8px rgba(0,0,0,.8);
+}
+
+article.post figure{
+  margin:0;
+}
+
+#practice blockquote{
+  border:4px double #c0c0c0;
+  padding: 20px 40px;
+  margin:40px, 80px;
+  border-radius:30px 0;
+  background-color: #C764F5;
+  color:#ffffff;
+  line-height:1.4;
+  text-shadow: 1px 1px #000;
+}
+
+
+time.post-date{
+  text-transform:uppercase;
+  color: #C950DE;
+}
+
+article.post img
+{
+  border:solid 1px #C950DE;
+  padding:2.5px
+}
+
+article.post a
+{
+  color:#FF5CFA;
+  transition: 0.5s;
+
+}
+
+article.post a:hover{
+  text-decoration:none;
+ }
+
+/* Attribute Selector Example
+a[target="_blank"]{
+  color:red;
+}
+*/
+
+aside[role="complementary"]
+{
+  background-color: #FF5CFA;
+  color:#fff;
+  padding:20px;
+  
+}
+
+aside div.container
+{
+  display:flex;
+  flex-direction: row;
+  gap:40px;
+
+}
+
+aside .container p{
+  line-height:1;
+}
+
+aside .container a:last-of-type{
+  color:#ffffff;
+  display:block;
+  text-align: right;
+  margin-top:20px;
+}
+
+aside.container a{
+  color:#ffffff;
+
+}
+aside .container .widget footer{
+  display:none;
+}
+
+#colophon{
+  background:#3b63
+}
+
+#colophone h6{
+  padding:20px;
+  margin:0;
+  text-align: center;
+  color:#fff
+}
+
+
+
+
+
+
+  
+/*  ---------------Media Queries-----------------  */
+
+@media screen and (max-width:600px){
+  
+  header.primary nav ul{
+    flex-direction:column;
+    max-width:250px;
+    margin:auto;
+    gap:10px;
+  }
+  header.primary nav ul a{
+    display:block;
+  }
+
+}
