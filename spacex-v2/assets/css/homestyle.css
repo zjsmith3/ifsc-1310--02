@@ -1,0 +1,291 @@
+/* CSS DEMO PROJECT */
+/* color scheme: #FF5CFA #C950DE #C764F5 #984BE1 #955CFF
+/*  ---------------Box Sizing-----------------  */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  /*  --------------- Responsive Images -----------------  */
+
+img{
+  max-width:100%;
+}
+
+/*  --------------- Utility Styles -----------------  */
+
+.container{
+  width:80vw;
+  margin:40px auto;
+}
+
+.img-right{
+  float:right;
+  margin: 10px 0px 10px 10px;
+  border: 4px double #c0c0c0;
+  box-shadow: 0 8px 8px rgba(0,0,0,1);
+  border-color:#955CFF
+  
+}
+
+.img-left{
+  float:left;
+  margin: 0px 10px 10px 20px;
+  border: 4px double #c0c0c0;
+  padding: 5px;
+  box-shadow: 0 8px 8px rgba(0,0,0,1);
+}
+
+.img-center{
+  border-radius: 50%;
+  border: 4px double #c0c0c0;
+  padding: 5px;
+  box-shadow: 0 8px 8px rgba(0,0,0,1);
+  display:block;
+  margin:20px auto;
+
+}
+
+
+/*  --------------- Global Styles -----------------  */
+
+body{
+  font-family: 'Kdam Thmor Pro', 'Roboto', sans-serif;
+  margin:0;
+  background-image:url("https://img.freepik.com/free-photo/starry-night-sky_1048-11828.jpg?w=1380&t=st=1700118847~exp=1700119447~hmac=7e82bc550756a228adbfaf51e13f965a76c31fa11b070891000e0af36371de52");
+  background-size:contain;
+  color:#c0c0c0 
+}
+
+header.primary{
+  background-image:url("https://i.insider.com/57e1a3cfb0ef97eb018b709b?width=1000&format=jpeg&auto=webp");
+  background-size:contain;
+  color:#ffffff;
+  text-align:center;
+  padding:40px;
+   /*long form*/
+   padding-top: 40px;
+   padding-right: 40px;
+   padding-bottom: 0px;
+   padding-left: 40px;  
+    /* T,R,B,L */
+   padding: 20px 40px 0px 40px; 
+   /* Two Value Top/Bottom / L/R */
+   padding: 20px 40px;
+   text-shadow: 1px 1px #000000;
+ }
+ 
+ header.h1{
+  font-size: 300.0px;
+  margin: 20px;
+  
+ }
+
+ header.primary h1 a{
+  color:#fff;
+  text-decoration:none;
+}
+
+/* header nav -------------------------------*/
+
+header.primary nav{
+  max-width:960px;
+  margin: 40px auto 20px auto;
+}
+
+header.primary nav ul{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+  padding:0;
+}
+
+header.primary nav ul li{
+  list-style-type:none;
+}
+
+header.primary nav a{
+  color:#ffffff;
+  text-decoration:none;
+  background-color:#6992E5;
+  background-color: rgba(105,146,229,.4);
+  padding:8px 16px;
+  border-radius:20px;
+  transition:.5s;
+}
+
+header.primary nav a:hover,
+header.primary nav a:active
+{
+  background-color: rgba(84,138,229,.8);
+}
+/*-----------------------------------------------------------*/
+
+
+/* intro -------------------------------------*/
+
+#intro{
+  font-size:xx-large;
+  text-align: center;
+  background-image:url("https://cdn.mos.cms.futurecdn.net/HsDtpFEHbDpae6wBuW5wQo.jpg");
+  background-size:cover;
+  padding-bottom:14px;
+  color:#9191B1;
+}
+
+#introhistory{
+  font-size:xx-large;
+  text-align: center;
+  /*background-image:url("https://cdn.mos.cms.futurecdn.net/HsDtpFEHbDpae6wBuW5wQo.jpg");
+  background-size:cover;*/
+  padding-bottom:14px;
+  color:#ffffff;
+
+}
+
+#introfaq{
+  font-size:large;
+  text-align: center;
+  padding-bottom:14px;
+  color:#ffffff;
+}
+
+#introfaq h1{
+  font-size:xx-large;
+  border-bottom: 8px dotted #6992E5;
+  margin:100px
+}
+
+#introfaq p{
+  border-bottom:8px dotted #6992E5;
+  margin:10px;
+  margin-left:100px;
+  margin-right:100px;
+}
+
+
+/* ----------------------------------------------------- */
+
+/* three articals -------------------------------------- */
+
+
+#precontent{
+  text-align: center;
+  font-size:xx-large;
+}
+
+#content{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  gap:20px;
+  text-align:center;
+}
+
+#content h1{
+  text-align: center;
+  font-size:xx-large;
+  margin: 40px;
+  padding: 40px 40px 40px 40px;
+}
+
+#content article.post{
+  box-shadow: 0 4px 8px rgba(0,0,0,.4);
+  padding:10px;
+  font: size 0.8em;
+  transition: .5;
+  color:#ffffff;
+}
+
+#content article.post:hover{
+  box-shadow: 0 4px 8px rgba(0,0,0,.8);
+}
+
+article.post figure{
+  margin:0px;
+}
+
+article.mars{
+  background-image:url("https://www.worldatlas.com/upload/bb/c3/32/shutterstock-1041249343.jpg");
+  background-size:cover;
+}
+
+article.pluto{
+  background-image:url("https://smd-cms.nasa.gov/wp-content/uploads/2023/09/PIA01492.jpg");
+  background-size:cover;
+}
+
+article.venus{
+  background-image:url("https://cdn.mos.cms.futurecdn.net/kaPwBjHiUKax8syodHNPmF-320-80.jpg");
+  background-size:cover;
+}
+
+/* faq content ----------------------------- */
+
+
+
+/*table-------------------------*/
+
+table{
+  width:60%;
+  border:1px solid #ffffff;
+  border-collapse: collapse;
+  margin-bottom:20px;
+  color:#ffffff
+} 
+table caption{
+  font-weight:bold;
+  padding: 20px;
+  
+}
+
+table tr{
+  transition: .5s;
+}
+table tr:nth-child(even){
+background-color: rgba(255, 255, 255, 0.1)
+}
+
+table tr:hover{
+  background-color:rgba(255, 255, 255, 0.4);
+}
+
+table th {
+  background-color: rgb(64, 23, 177);
+  color: #fff; 
+  padding:10px
+}
+
+table th:nth-child(1) {
+  background-color:rgb(108, 81, 182);
+
+} 
+table th:nth-child(3) {
+  background-color:rgb(108, 81, 182);
+
+} 
+
+table td{
+  border:1px solid #ffffff;
+  text-align:center;
+  padding:10px 10px 10px 10px;
+  font-size:large;
+}
+
+table td:nth-child(n+2) {
+  text-align:right;
+  text-align:center;
+}
+
+table.center {
+  margin-left:auto; 
+  margin-right:auto;
+}
+
+
+
